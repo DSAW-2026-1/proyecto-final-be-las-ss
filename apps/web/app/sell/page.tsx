@@ -19,19 +19,6 @@ function firstSearchParam(
   return trimmed === "" ? undefined : trimmed;
 }
 
-function statusChipClass(status: ProductListItem["status"]) {
-  switch (status) {
-    case "active":
-      return "bg-emerald-100 text-emerald-900";
-    case "inactive":
-      return "bg-zinc-200 text-zinc-800";
-    case "removed":
-      return "bg-red-100 text-red-900";
-    default:
-      return "bg-zinc-100 text-zinc-800";
-  }
-}
-
 export default async function SellPage({
   searchParams,
 }: {
@@ -130,11 +117,6 @@ export default async function SellPage({
                 key={p.id}
                 className="flex w-[280px] flex-col items-center gap-2"
               >
-                <span
-                  className={`rounded-full px-2.5 py-0.5 text-xs font-medium capitalize ${statusChipClass(p.status)}`}
-                >
-                  {p.status}
-                </span>
                 <ProductCard product={mapProductListItemToCardProduct(p)} />
               </li>
             ))}
