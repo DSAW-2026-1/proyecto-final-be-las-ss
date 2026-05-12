@@ -114,7 +114,7 @@ export default function LoginPage() {
             textAlign: "center",
           }}
         >
-          Welcome
+          Welcome - Sabana Marketplace
         </Typography>
 
         {registeredBanner ? (
