@@ -1,3 +1,7 @@
+## Vercel link
+
+#### https://proyecto-final-be-las-ss-web.vercel.app/login?callbackUrl=%2F
+
 # Marketplace
 
 Institutional **marketplace** for a university community: students can publish, browse, and trade goods in a trusted, moderated environment. The product pairs a **Next.js** storefront with a **Express** REST API and **PostgreSQL** (via **Prisma**).
